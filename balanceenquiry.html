@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>${title}</title>
+
+	<title>Sidebar/Topbar</title>
+
+	  	<!-- Font Awesome -->
+	<link rel="stylesheet" href="mdb/css/all.min.css"/>
+		<!-- Bootstrap core CSS -->
+	<link href="mdb/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap DataTable -->
+	<link href="mdb/css/dataTables.bootstrap4.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+	<link href="mdb/css/mdb.min.css" rel="stylesheet">
+		<!-- Your custom styles (optional) -->
+	<link rel="stylesheet" href="mdb/css/style.css">
+</head>
+
+<body style="font-family: 'lato', sans-serif;">
+	
+		<div id="page-content-wrapper">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-light border-bottom">
+			<button class="" id="menu-toggle"><i class="fas fa-bars"></i></button>
+			<a class="navbar-brand text-primary mx-3" href="#"><strong><img class="d-inline-block align-top" src="http://supersoft.com.ng/imgs/supersoftLogo.png" width="50" height="50" /></strong></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+
+						<a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="${contextRoot}/index">LogOut</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="d-flex" id="wrapper">
+		<!-- Sidebar -->	
+			<div class="bg-light border-right" id="sidebar-wrapper">
+				<div class="sidebar-heading">Heading</div>
+				<div class="list-group list-group-flush">
+					<a href="${contextRoot}/dashboard" class="list-group-item list-group-item-action bg-light"><i class="fas fa-home"></i>&nbsp;Dashboard</a>
+					<a href="${contextRoot}/nameenquiry" class="list-group-item list-group-item-action bg-light"><i class="far fa-address-card"></i>&nbsp;Name Enquiry</a>
+					<a href="${contextRoot}/directcredit" class="list-group-item list-group-item-action bg-light"><i class="far fa-credit-card"></i>&nbsp;Direct Credit</a>
+					<a href="${contextRoot}/directdebit" class="list-group-item list-group-item-action bg-light"><i class="far fa-credit-card"></i>&nbsp;Direct Debit</a>
+					<a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-calendar-alt"></i>&nbsp;Mandate Account</a>
+					<a href="${contextRoot}/balanceenquiry" class="list-group-item list-group-item-action bg-light"><i class="fas fa-book-open"></i>&nbsp;Balance Enquiry</a>
+					<a href="${contextRoot}/index" class="list-group-item list-group-item-action bg-light"><i class="fas fa-sign-out-alt"></i>&nbsp;LogOut</a>
+				</div>
+			</div>	
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div class="container-fluid">
+			<!-- The body or content goes in here -->
+			<div class="border" style="background-color:#eee; height: 100%">
+			<div class="mt-5">
+			<div class="offset-3 col-6">
+				<div class="card">
+
+				<h5 class="card-header info-color white-text text-center py-2">
+					<strong>Balance Enquiry</strong>
+				</h5>
+
+				<!--Card content-->
+				<div class="card-body">
+
+					<!-- Form -->
+					<form class="text-center" style="color: #757575;" action="#!">
+
+						<!-- Email -->
+						<div class="md-form">
+						<input type="text" id="accountnumber" class="form-control">
+						<label for="accountnumber">Enter Account Number</label>
+						</div>
+
+						<!-- Sign in button -->
+						<button class="btn btn-outline-success btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Submit</button>
+
+					</form>
+					<!-- Form -->
+				</div>
+				</div>
+			</div>
+			</div>
+			<div>
+		<!-- /#page-content-wrapper -->
+		</div>
+		
+	
+
+	<!--jQuery -->
+	<script type="text/javascript" src="mdb/js/jquery-3.4.1.min.js"></script>
+	
+	<script type="text/javascript" src="mdb/js/jquery.dataTables.js"></script>
+
+	<script type="text/javascript" src="mdb/js/dataTables.bootstrap4.js"></script>
+	
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="mdb/js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="mdb/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="mdb/js/mdb.min.js"></script>
+	<!-- Your custom javascript file (optional) -->
+	<script type="text/javascript" src="mdb/js/main2.js"></script>
+	
+	<script>
+		$("#menu-toggle").click(function(e) {
+		  e.preventDefault();
+		  $("#wrapper").toggleClass("toggled");
+		});
+	</script>
+	
+</body>
+</html>
